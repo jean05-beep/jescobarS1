@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="jescobarS1.Views.Empleado"
+             Title="Empleado">
+    <StackLayout Padding="10">
+
+        <!-- Título -->
+        <Label Text="Cálculo de Aporte al IESS"
+               FontSize="24"
+               HorizontalOptions="Center" />
+
+        <!-- Cajas de texto -->
+        <Label Text="Nombre:" />
+        <Entry x:Name="txtNombre" Placeholder="Ingrese su nombre" />
+
+        <Label Text="Apellido:" />
+        <Entry x:Name="txtApellido" Placeholder="Ingrese su apellido" />
+
+        <Label Text="Edad:" />
+        <Entry x:Name="txtEdad" Placeholder="Ingrese su edad" Keyboard="Numeric" />
+
+        <Label Text="Salario:" />
+        <Entry x:Name="txtSalario" Placeholder="Ingrese su salario" Keyboard="Numeric" />
+        <Label Text="" HeightRequest="10" />
+
+        <!-- Botón -->
+        
+        <Button Text="Calcular Aporte al IESS"
+                Clicked="OnCalcularClicked"
+                HorizontalOptions="Center" />
+
+    </StackLayout>
+</ContentPage>
